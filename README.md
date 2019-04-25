@@ -1,5 +1,5 @@
 # FutureDevBot
-A chat bot for the brogrammers discord channel that introduces new users and notify the events to all users.
+A chat bot for the future dev organization. It introduce new users on discord channel and notify users.
 
 Contributors
 
