@@ -3,4 +3,4 @@ A chat bot for the brogrammers discord channel that introduces new users and not
 
 Contributors
 
-1. [@darksun27 (owner)](https://github.com/darksun27)
+1. [@darksun27](https://github.com/darksun27) **(owner)**
