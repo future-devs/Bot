@@ -1,6 +1,7 @@
-var auth = require('./auth.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+
+require('dotenv').config();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -13,7 +14,10 @@ client.on('message', msg => {
   if(msg.content === 'what is my avatar'){
       msg.reply(msg.author.avatarURL);
   }
-  if(msg.content.startsWith('!github')){
+  if(msg.content.startsWith('!github-bot')){
+    msg.reply("https://github.com/future-devs/Bot");
+  }
+  else if(msg.content.startsWith('!github')){
       msg.reply("https://github.com/future-devs");
   }
   if(msg.content.startsWith("!cmds")){
@@ -60,6 +64,9 @@ client.on('message', message => {
         message.reply('You didn\'t mention the user to kick!');
       }
     }
+    if(message.content === 'hello'){
+      message.channel.send(`Hey there ${message.author}`);
+    }
   });
 
 client.on('guildMemberAdd', member => {
@@ -68,7 +75,7 @@ client.on('guildMemberAdd', member => {
     // Do nothing if the channel wasn't found on this server
     if (!channel) return;
     // Send the message, mentioning the member
-    channel.send(`Welcome to BroGrammers, ${member}`);
+    channel.send(`Welcome to BroGrammers, ${member}\nPlease introduce yourself in the #introduction channel. Happy learning!`);
 });
 
-client.login(auth.token);
+client.login(process.env.AUTH_TOKEN);
