@@ -9,7 +9,6 @@
   "author": "darksun27",
   "license": "MIT",
   "dependencies": {
-    "discord": "^0.8.2",
     "discord.js": "^11.4.2",
     "dotenv": "^7.0.0"
   }
