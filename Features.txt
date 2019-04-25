@@ -1,0 +1,5 @@
+Funtions to be performed by bot
+
+1. Notify users in case the user has not responded to ping in issues or PR.
+2. Convert PR to stale conditions in case there is no respond to open PR.
+3. Close PR after 7 days when there is no respond to open PR in stale condition.
