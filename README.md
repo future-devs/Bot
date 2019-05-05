@@ -1,5 +1,5 @@
 # FutureDevBot
-A chat bot for the Future Dev organization. It introduce new users on discord channel and notify users.
+A Discord bot for the Future Dev organization. It introduce new users on our channel and notify users regarding any important updates.
 
 Contributors
 
