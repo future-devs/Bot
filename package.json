@@ -1,15 +1,26 @@
 {
-  "name": "discord-bot",
+  "name": "future-devs-bot",
   "version": "1.0.0",
-  "description": "test bot for baddydaddy",
-  "main": "server.js",
+  "description": "Discord Bot for FutureDevs Discord Server",
+  "main": "chatbot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future-devs/FutureDevBot.git"
+  },
+  "keywords": [
+    "Bot"
+  ],
   "author": "darksun27",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/future-devs/FutureDevBot/issues"
+  },
+  "homepage": "https://github.com/future-devs/FutureDevBot#readme",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "dotenv": "^7.0.0"
+    "dotenv": "^8.0.0"
   }
 }
