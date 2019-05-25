@@ -1,5 +1,6 @@
 require('dotenv').config();
-const webSocket = require('ws');
+const webSocket      = require('ws');
+const serviceHandler = require('./serviceHandlers.js')
 
 let discordSocket = null;
 
@@ -39,8 +40,8 @@ function messageHandler(message){
             discordSocket.send(JSON.stringify(payload));
         },dataValue.heartbeat_interval);
     }
-    else if(opCode == 0 && eventCode == 'READY'){
-        console.log(`Logged In as ${dataValue.user.username}#${dataValue.user.discriminator}`);
+    else if(opCode == 0){
+        serviceHandler.serviceHandler(eventCode, dataValue);
     }
 }
 
