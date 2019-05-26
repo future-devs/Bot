@@ -1,6 +1,7 @@
-const botReply = require('../Handlers/replyHandlers.js');
-const util     = require('../utils.js');
-const repLink  = require('./github.js');
+const botReply  = require('../Handlers/replyHandlers.js');
+const util      = require('../utils.js');
+const repLink   = require('./github.js');
+const jokeServe = require('./joke.js');
 
 function greetings(userId){
     var replyToPost = `Welcome to the server <@${userId}>! Please introduce yourself`;
@@ -17,6 +18,9 @@ function provideService(messageContent, userId){
     }
     else if(command == util.BOT_ACTIONS.TEST){
         util.generateBotTest(botReply.postBotReply, userId);
+    }
+    else if(command == util.BOT_ACTIONS.JOKE){
+        jokeServe.getRandomJoke(botReply.postBotReply, userId);
     }
 }
 
