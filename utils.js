@@ -5,12 +5,14 @@ BOT_TRIGGER = {
 BOT_COMMANDS = {
     'HELP'        : '!help',
     'GITHUB_LINK' : '!github',
-    'TEST'        : '!test'
+    'TEST'        : '!test',
+    'JOKE'        : '!joke'
 };
 BOT_ACTIONS = {
     'GITHUB_LINK' : 'GITHUB_LINK',
     'HELP'        : 'HELP',
-    'TEST'        : 'TEST'
+    'TEST'        : 'TEST',
+    'JOKE'        : 'JOKE'
 };
 
 function parseMessage(messageContent){
