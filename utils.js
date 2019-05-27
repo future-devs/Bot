@@ -32,7 +32,7 @@ function generateBotHelp(callback, userId){
 }
 
 function generateBotTest(callback, userId){
-    var replyStr = "Chal raha hun, baar baar gand mein ungli na kar chutiye!";
+    var replyStr = "Currently working fine!";
     return callback(replyStr, userId, 0);
 }
 
