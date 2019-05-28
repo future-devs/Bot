@@ -1,4 +1,4 @@
-### Note: This Bot is under development.
+### Note: This Bot is under testing.
 # FutureDevBot
 A Discord bot for the Future Dev organization. It introduce new users on our channel and notify users regarding any important updates.
 
