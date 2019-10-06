@@ -6,13 +6,15 @@ BOT_COMMANDS = {
     'HELP'        : '!help',
     'GITHUB_LINK' : '!github',
     'TEST'        : '!test',
-    'JOKE'        : '!joke'
+    'JOKE'        : '!joke',
+    'FACT'        : '!fact'
 };
 BOT_ACTIONS = {
     'GITHUB_LINK' : 'GITHUB_LINK',
     'HELP'        : 'HELP',
     'TEST'        : 'TEST',
-    'JOKE'        : 'JOKE'
+    'JOKE'        : 'JOKE',
+    'FACT'        : 'FACT'
 };
 
 function parseMessage(messageContent){
